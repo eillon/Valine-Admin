@@ -18,6 +18,7 @@
             <div class="vhead">
                 <% if(comment_list[i].get('link')) { %>
                     <a href="<%= comment_list[i].get('link') %>" target="_blank" rel="nofollow"> <%= comment_list[i].get('nick') %></a>
+                    console.log(comment_list[i].get('link'));
                 <% } else { %>
                     <span id="nick"><%= comment_list[i].get('nick') %></span>
                 <% } %>
